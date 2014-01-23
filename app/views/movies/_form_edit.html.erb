@@ -1,0 +1,7 @@
+<%= form_for :movie, method: :patch, url: movie_path do |f| %>
+  <%= label_tag(:Title, "Title:") %> <%= f.text_field :Title, value: @movie['Title'] %></br>
+  <%= label_tag(:Year, "Year:") %> <%= f.text_field :Year, value: @movie['Year'] %></br>
+  <%= f.submit "Save Changes" %>
+<% end %>
+
+

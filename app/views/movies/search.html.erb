@@ -1,0 +1,6 @@
+<%= render  partial: "navbar" %>
+
+<%= form_for :movie, method: :post, url: '/movies/search' do |f| %>
+  <%= label_tag(:search_term, "Search Term:") %> <%= f.text_field :search_term%></br>
+  <%= f.submit "Search" %>
+<% end %>
